@@ -45,6 +45,11 @@ header ul {
 }
 
 @media (max-width: 794px) {
+    /* header {
+        display: flex;
+        justify-content: center;
+    } */
+
     header ul {
         display: none;
 
@@ -2178,7 +2183,6 @@ table tbody tr td:hover {
 .show-posts .post-box .infop {
     background-color: #0000ffd4;
     color: white;
-    text-align: center;
     padding: 20px;
 }
 

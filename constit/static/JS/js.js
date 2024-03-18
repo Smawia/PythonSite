@@ -6,10 +6,13 @@ console.log(ul)
 console.log(lis)
 
 bar.onclick = function () {
-    ul.style.cssText = "display: flex;flex-direction: column;position: absolute;left: 40%;width: 160px;top: 6%;z-index: 1000;background-color:#333;color:white";
-
+    ul.style.cssText = "display: flex;flex-direction: column;position: absolute;left: 30%;width: 160px;top:3%;z-index: 1000;background-color:#333;color:white";
 }
 
-// document.addEventListener("click", function () {
-//     ul.style.display = "none";
-// })
+document.body.addEventListener("click", function (e) {
+    if (!e.target.classList.contains('toggle-menu')) {
+        if (ul.style.display === 'flex') {
+            ul.style.display = 'none';
+        }
+    }
+})
