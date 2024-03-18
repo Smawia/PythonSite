@@ -6,7 +6,7 @@ console.log(ul)
 console.log(lis)
 
 bar.onclick = function () {
-    ul.style.cssText = "display: flex;flex-direction: column;position: absolute;left: 30%;width: 160px;top:3%;z-index: 1000;background-color:#333;color:white";
+    ul.style.cssText = "display: flex;flex-direction: column;position: absolute;left: 50%;width: 160px;top:4%;z-index: 1000;background-color:#333;color:white";
 }
 
 document.body.addEventListener("click", function (e) {
