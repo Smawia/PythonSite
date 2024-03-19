@@ -27,6 +27,9 @@ header {
     align-items: center;
 }
 
+.togg {
+    position: relative;
+}
 
 header .toggle-menu {
     font-size: 20px;

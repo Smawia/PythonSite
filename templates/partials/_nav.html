@@ -12,7 +12,8 @@
         <i class="fa-solid fa-right-to-bracket login"></i>
     </a>
     {% endif %}
-    <i class="fas fa-bars toggle-menu"></i>
+    <div class="togg">
+        <i class="fas fa-bars toggle-menu"></i>
     <ul class="js">
         <li><a href="{% url 'index' %}" 
             {% if '/' == request.path %}
@@ -109,6 +110,7 @@
             {% endif %}
             >تسجيل عضوية</a></li>
     </ul>
+    </div>
     <img src="{% static 'imgs/logo.png' %}" alt="">
     {% if not request.user.is_authenticated %}
         <a href="{% url 'logout' %}" style="display: none;">
